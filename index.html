@@ -33,6 +33,16 @@
                 </section>
                 <section>
                     <p>Women are underrepresented among Nobel laureates, receiving fewer than 10% of all prizes.</p>
+                        <p>Plot.plot({
+  color: { legend: true },
+  marks: [
+    Plot.barY(
+      nobelLaureates,
+      Plot.groupX({ y: "count" }, { x: "Category", fill: "Gender", tip: true })
+    ),
+    Plot.ruleY([0])
+  ]
+})</p>
                 </section>
             </div>
         </div>
